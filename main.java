@@ -81,6 +81,15 @@ public class main extends Application {
             if(mRadioSmall.isSelected()) { 	size = 12; }
             else if(mRadioMedium.isSelected()) { size = 16; }
             else if(mRadioLarge.isSelected()) { size = 20; }
+
+            Font font = Font.font(family, size);
+            if(mCheckBold.isSelected() && mCheckItalic.isSelected()) {
+                  font = Font.font(family, FontWeight.BOLD,FontPosture.ITALIC,size);
+            } else if(mCheckBold.isSelected()) {
+                  font = Font.font(family, FontWeight.BOLD, size);
+            } else if(mCheckItalic.isSelected()) {
+                  font = Font.font(family, FontPosture.ITALIC, size);
+            }
         }
     }
 }

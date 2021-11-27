@@ -71,5 +71,8 @@ public class main extends Application {
         vBox.setAlignment(Pos.CENTER);
         vBox.setPadding(new Insets(10));
         vBox.getChildren().addAll(mLabelText, hBox1, hBox2, hBox3);
+
+        stage.setScene(new Scene(vBox));
+        stage.show();
     }
 }

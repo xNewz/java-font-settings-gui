@@ -74,23 +74,22 @@ public class main extends Application {
 
         stage.setScene(new Scene(vBox));
         stage.show();
-
-        private void onAction() {
-            String family = mComboFont.getValue().toString();
-            int size = 12;
-            if(mRadioSmall.isSelected()) { 	size = 12; }
-            else if(mRadioMedium.isSelected()) { size = 16; }
-            else if(mRadioLarge.isSelected()) { size = 20; }
-
-            Font font = Font.font(family, size);
-            if(mCheckBold.isSelected() && mCheckItalic.isSelected()) {
-                  font = Font.font(family, FontWeight.BOLD,FontPosture.ITALIC,size);
-            } else if(mCheckBold.isSelected()) {
-                  font = Font.font(family, FontWeight.BOLD, size);
-            } else if(mCheckItalic.isSelected()) {
-                  font = Font.font(family, FontPosture.ITALIC, size);
-            }
-            mLabelText.setFont(font);
-        }
     }
+    private void onAction() {
+        String family = mComboFont.getValue().toString();
+        int size = 12;
+        if(mRadioSmall.isSelected()) { 	size = 12; }
+        else if(mRadioMedium.isSelected()) { size = 16; }
+        else if(mRadioLarge.isSelected()) { size = 20; }
+
+        Font font = Font.font(family, size);
+        if(mCheckBold.isSelected() && mCheckItalic.isSelected()) {
+              font = Font.font(family, FontWeight.BOLD,FontPosture.ITALIC,size);
+        } else if(mCheckBold.isSelected()) {
+              font = Font.font(family, FontWeight.BOLD, size);
+        } else if(mCheckItalic.isSelected()) {
+              font = Font.font(family, FontPosture.ITALIC, size);
+        }
+        mLabelText.setFont(font);
+  }
 }

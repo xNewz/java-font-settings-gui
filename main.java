@@ -74,5 +74,9 @@ public class main extends Application {
 
         stage.setScene(new Scene(vBox));
         stage.show();
+
+        private void onAction() {
+            
+        }
     }
 }

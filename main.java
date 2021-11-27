@@ -21,6 +21,14 @@ public class main extends Application {
     }
 
     public void start(Stage stage) {
+        mLabelText = new Label("Sample Text");
 
+        Label label = new Label("Font Family");
+        label.setPrefWidth(70);
+        mComboFont = new ComboBox();
+        mComboFont.setPromptText("Font Family");
+        mComboFont.getItems().addAll("Arial", "Consolas", "Times New Roman");
+        mComboFont.setValue("Times New Roman");
+        mComboFont.setOnAction(e -> onAction());
     }
 }

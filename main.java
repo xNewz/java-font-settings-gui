@@ -76,7 +76,11 @@ public class main extends Application {
         stage.show();
 
         private void onAction() {
-            
+            String family = mComboFont.getValue().toString();
+            int size = 12;
+            if(mRadioSmall.isSelected()) { 	size = 12; }
+            else if(mRadioMedium.isSelected()) { size = 16; }
+            else if(mRadioLarge.isSelected()) { size = 20; }
         }
     }
 }

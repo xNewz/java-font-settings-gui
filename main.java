@@ -66,5 +66,10 @@ public class main extends Application {
         hBox3.setPadding(new Insets(10));
         hBox3.setSpacing(10);
         hBox3.getChildren().addAll(label,mRadioSmall,mRadioMedium,mRadioLarge);
+
+        VBox vBox = new VBox();
+        vBox.setAlignment(Pos.CENTER);
+        vBox.setPadding(new Insets(10));
+        vBox.getChildren().addAll(mLabelText, hBox1, hBox2, hBox3);
     }
 }

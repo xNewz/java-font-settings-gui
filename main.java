@@ -47,5 +47,19 @@ public class main extends Application {
         hBox2.setPadding(new Insets(10));
         hBox2.setSpacing(10);
         hBox2.getChildren().addAll(label, mCheckBold, mCheckItalic);
+
+        label = new Label("Font Size");
+        label.setPrefWidth(70);
+        mRadioSmall = new RadioButton("Small");
+        mRadioMedium = new RadioButton("Medium");
+        mRadioLarge = new RadioButton("Large");
+        ToggleGroup g = new ToggleGroup();
+        mRadioSmall.setToggleGroup(g);
+        mRadioMedium.setToggleGroup(g);
+        mRadioLarge.setToggleGroup(g);
+        mRadioSmall.setSelected(true);
+        mRadioSmall.setOnAction(e -> onAction());
+        mRadioMedium.setOnAction(e -> onAction());
+        mRadioLarge.setOnAction(e -> onAction());
     }
 }

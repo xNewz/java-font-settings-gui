@@ -90,6 +90,7 @@ public class main extends Application {
             } else if(mCheckItalic.isSelected()) {
                   font = Font.font(family, FontPosture.ITALIC, size);
             }
+            mLabelText.setFont(font);
         }
     }
 }

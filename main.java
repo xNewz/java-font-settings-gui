@@ -11,5 +11,8 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 public class main extends Application {
-    
+    private Label mLabelText;
+    private CheckBox mCheckBold, mCheckItalic;
+    private RadioButton mRadioSmall, mRadioMedium, mRadioLarge;
+    private ComboBox mComboFont;
 }

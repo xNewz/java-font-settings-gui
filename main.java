@@ -15,4 +15,8 @@ public class main extends Application {
     private CheckBox mCheckBold, mCheckItalic;
     private RadioButton mRadioSmall, mRadioMedium, mRadioLarge;
     private ComboBox mComboFont;
+
+    public static void main(String[] args) {
+        launch();
+    }
 }

@@ -61,5 +61,10 @@ public class main extends Application {
         mRadioSmall.setOnAction(e -> onAction());
         mRadioMedium.setOnAction(e -> onAction());
         mRadioLarge.setOnAction(e -> onAction());
+
+        HBox hBox3 = new HBox();
+        hBox3.setPadding(new Insets(10));
+        hBox3.setSpacing(10);
+        hBox3.getChildren().addAll(label,mRadioSmall,mRadioMedium,mRadioLarge);
     }
 }

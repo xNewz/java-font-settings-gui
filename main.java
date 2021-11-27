@@ -19,4 +19,8 @@ public class main extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+    public void start(Stage stage) {
+
+    }
 }

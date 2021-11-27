@@ -35,5 +35,17 @@ public class main extends Application {
         hBox1.setPadding(new Insets(10));
         hBox1.setSpacing(10);
         hBox1.getChildren().addAll(label, mComboFont);
+
+        label = new Label("Font Style");
+        label.setPrefWidth(70);
+        mCheckBold = new CheckBox("Bold");
+        mCheckItalic = new CheckBox("Italic");
+        mCheckBold.setOnAction(e -> onAction());
+        mCheckItalic.setOnAction(e -> onAction());
+
+        HBox hBox2 = new HBox();
+        hBox2.setPadding(new Insets(10));
+        hBox2.setSpacing(10);
+        hBox2.getChildren().addAll(label, mCheckBold, mCheckItalic);
     }
 }

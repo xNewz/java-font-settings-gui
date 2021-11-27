@@ -30,5 +30,10 @@ public class main extends Application {
         mComboFont.getItems().addAll("Arial", "Consolas", "Times New Roman");
         mComboFont.setValue("Times New Roman");
         mComboFont.setOnAction(e -> onAction());
+
+        HBox hBox1 = new HBox();
+        hBox1.setPadding(new Insets(10));
+        hBox1.setSpacing(10);
+        hBox1.getChildren().addAll(label, mComboFont);
     }
 }
